@@ -243,10 +243,14 @@ $color-blockquote: #42b983;
 
   ul li {
     list-style: none;
-    &:not(".task-list-item"):before {
+    &::before {
       content: "•";
       margin-right: 4px;
       color: $color-theme;
+    }
+    &.task-list-item{
+      content: "";
+      margin-right: 0;
     }
   }
   input[type="checkbox"] {
