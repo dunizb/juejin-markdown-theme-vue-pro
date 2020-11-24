@@ -248,7 +248,7 @@ $color-blockquote: #42b983;
       margin-right: 4px;
       color: $color-theme;
     }
-    &.task-list-item{
+    &.task-list-item::before{
       content: "";
       margin-right: 0;
     }
